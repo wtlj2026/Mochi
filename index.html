@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mochi — Purrfectly curious, endlessly charming</title>
+  <meta name="description" content="Mochi's photos, silly stories, and toy reviews — for fans and pet brands." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo">🐾 Mochi</h1>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#stories">Stories</a>
+      <a href="#videos">Videos</a>
+      <a href="#collab">Collaborate</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <img src="assets/hero.svg" alt="Mochi lounging in a sunbeam" />
+      <div class="hero-text">
+        <h2>Purrfectly curious, endlessly charming</h2>
+        <p>Photos, silly stories, and toy reviews for fans and brands.</p>
+        <div class="cta">
+          <a href="#gallery" class="btn">See Gallery</a>
+          <a href="#stories" class="btn">Latest Story</a>
+          <a href="#collab" class="btn outline">Work with me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h3>Gallery</h3>
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="naps">Naps</button>
+        <button data-filter="zoomies">Zoomies</button>
+        <button data-filter="outfits">Outfits</button>
+      </div>
+      <div id="galleryGrid" class="grid"></div>
+    </section>
+
+    <section id="stories" class="section">
+      <h3>Stories & Reviews</h3>
+      <div id="posts"></div>
+    </section>
+
+    <section id="videos" class="section">
+      <h3>Videos & Reels</h3>
+      <div id="videosGrid" class="grid"></div>
+    </section>
+
+    <section id="collab" class="section">
+      <h3>Collaborations & Contact</h3>
+      <p>Interested in collabs or sponsoring treats? Drop a note below.</p>
+      <form id="contactForm">
+        <input name="name" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Tell me about the collab" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>🐾 Mochi • Photos & silly thoughts • <a href="#">Subscribe</a></p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="lbClose" class="lb-close">✕</button>
+    <img id="lbImg" alt="" />
+    <p id="lbCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
